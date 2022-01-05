@@ -1,0 +1,172 @@
+<h2>About Us</h2>
+  <img src="/assets/AP-Inter-Admission-2021-22.jpg">
+<h6><strong>Get Web Design & Development Training in Hyderabad from Industry Experts </strong></h6>
+
+<h3>Our Mission</h3>
+<p>Our mission is to empower developers with high quality applied learning opportunities at scale, and nurture the talent for the future.</p>
+<p>We are building a platform that would fundamentally change the way tech is learnt through our “work-like” Micro-Experiences. Crio Micro-Experiences provide an environment optimised for learning, with real world problems<br> curated from the industry.
+</p>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <h3>Developers Love Us</h3>
+  <q>
+“I have seen many online YouTube videos and various courses on programming, coding, and software development in general. The Crio program has proved to be an exception among all these. This program taught me many things that seldom I could have learned from all these courses.”
+Pratik Naik
+@pratik-naik-aa9262157
+
+“The philosophy of #LearningByDoing resonated very well. It was indeed a #Work-like experience right from getting notes from the Product Manager for the required features, to the instructions from Tech-Leads for execution of each module, to going through the forum to get the issues resolved and to solve the issues faced by fellow developers, to the weekly stand-ups. I would recommend everyone wanting to learn product development to go through Crio’s programs.”
+Jenim Patel
+@jenim-patel
+</q>
+  <p class="author">- pratk naik</p>
+</div>
+
+<div class="mySlides">
+  <h3>Developers Love Us</h3>
+  <q>
+“The Crio program is only one of its kind. It has helped me develop self-confidence and has definitely changed my perspective regarding the Computer world. Crio is a lot more than its Micro-Experiences. It is a micro industrial experience. It has shown me the way work goes on in the industry in a very effective way. This mini internship-like program has definitely impacted my career in these 8-10 weeks.”
+Deepam Gupta
+@deepamgupta
+
+“The Micro-Experiences that are lined up have well-organized modules covering in-demand interview and industry-relevant skills. I would highly recommend this program to anyone who wants to learn the art of Learn by Doing and wants to get an internship-like experience.”
+Ayush Shah
+@ayushshah1234
+
+</q>
+  <p class="author">- Ayushshah</p>
+</div>
+
+<div class="mySlides">
+  <h3>Developers Love Us</h3>
+  <q>“This was more of a transformation journey rather than just a learning journey for me for I attempted stuff I've never done before, stuff which seemed pretty tough in hindsight, but Crio's learning methodology put it all together for me and pushed me along all the way.”
+Mohit Sharma
+@mohit-sharma-7020b4193</q>
+  <p class="author">- Mohit Sharma</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>

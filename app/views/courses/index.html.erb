@@ -1,0 +1,29 @@
+<div class="container mt-3">
+  <h1>List of Courses </h1>
+  <table class="table table-striped">
+
+   <thead>
+   <% @courses.each do |course| %>
+       <tr>
+         <td><h2> <%= course.id %></h2></td>
+         <td><h2> <%= course.name %></h2></></td>
+         <td><p> <%= course.body%></p></td>
+         <td><p>
+             <strong> <%= course.language%></strong>
+                                           </p></td>
+         <td><p> <%= course.course_include %></p></></td>
+         <td><p> <%= course.requirement%></p></td>
+
+         <td><a href="/courses/<%= course.id %>">Show </a></td>
+         <td><a href="/courses/<%= course.id %>/edit">Edit</a></td>
+         <td><%= link_to "Destroy", course_path(course),
+                    method:  :delete,
+                    data: { confirm: "Are you sure?" } %></td>
+       </tr>
+      <% end %>
+    </thead>
+
+  </table>
+</div>
+
+<a href="courses/new">Add new Course</a>

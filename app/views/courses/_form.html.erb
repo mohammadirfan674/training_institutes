@@ -1,0 +1,31 @@
+<%= form_with(model: course) do |form| %>
+
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.label :language %><br>
+    <%= form.text_area :language %>
+  </div>
+
+  <div>
+    <%= form.label :course_include %><br>
+    <%= form.text_area :course_include %>
+  </div>
+
+    <div>
+    <%= form.label :requirement %><br>
+    <%= form.text_area :requirement %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

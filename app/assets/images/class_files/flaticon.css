@@ -1,0 +1,196 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 18/04/2018 12:58
+  	*/
+	
+	@font-face {
+	    font-family: "Flaticon";
+	    src: url("./Flaticon.eot");
+	    src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon";
+	        src: url("./Flaticon.svg#Flaticon") format("svg");
+	    }
+	}
+	
+	[class^="flaticon-"]:before,
+	[class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	    font-family: Flaticon;
+	    /*font-size: 20px;*/
+	    font-style: normal;
+	    /*margin-left: 20px;*/
+	}
+	
+	.flaticon-engineer-1:before {
+	    content: "\f100";
+	}
+	
+	.flaticon-team-1:before {
+	    content: "\f101";
+	}
+	
+	.flaticon-leaf:before {
+	    content: "\f102";
+	}
+	
+	.flaticon-planting:before {
+	    content: "\f103";
+	}
+	
+	.flaticon-syringe:before {
+	    content: "\f104";
+	}
+	
+	.flaticon-engineer:before {
+	    content: "\f105";
+	}
+	
+	.flaticon-team:before {
+	    content: "\f106";
+	}
+	
+	.flaticon-cooperate:before {
+	    content: "\f107";
+	}
+	
+	.flaticon-cryptocurrency:before {
+	    content: "\f108";
+	}
+	
+	.flaticon-school:before {
+	    content: "\f109";
+	}
+	/************intellibrain-fonticon***********/
+	
+	@font-face {
+	    font-family: "Flaticon1";
+	    src: url("./Flaticon1.eot");
+	    src: url("./Flaticon1.eot?#iefix") format("embedded-opentype"), url("./Flaticon1.woff2") format("woff2"), url("./Flaticon1.woff") format("woff"), url("./Flaticon2.ttf") format("truetype"), url("./Flaticon1.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon1";
+	        src: url("./Flaticon1.svg#Flaticon") format("svg");
+	    }
+	}
+	
+	[class^="flaticon1-"]:before,
+	[class*=" flaticon1-"]:before,
+	[class^="flaticon1-"]:after,
+	[class*=" flaticon1-"]:after {
+	    font-family: Flaticon1;
+	    font-style: normal;
+	    /*font-size: 20px;
+margin-left: 20px;*/
+	}
+	
+	.flaticon1-rocket:before {
+	    content: "\f100";
+	}
+	/************globalstudies-fonticon***********/
+	
+	@font-face {
+	    font-family: "Flaticon-gs";
+	    src: url("./Flaticon-gs.eot");
+	    src: url("./Flaticon-gs.eot?#iefix") format("embedded-opentype"), url("./Flaticon-gs.woff2") format("woff2"), url("./Flaticon-gs.woff") format("woff"), url("./Flaticon-gs.ttf") format("truetype"), url("./Flaticon-gs.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon-gs";
+	        src: url("./Flaticon-gs.svg#Flaticon") format("svg");
+	    }
+	}
+	
+	[class^="flaticon-gs-"]:before,
+	[class*=" flaticon-gs-"]:before,
+	[class^="flaticon-gs-"]:after,
+	[class*=" flaticon-gs-"]:after {
+	    font-family: Flaticon-gs;
+	    font-style: normal;
+	    /*font-size: 20px;
+margin-left: 20px;*/
+	}
+	
+	.flaticon-gs-earth-globe:before {
+	    content: "\f100";
+	}
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 11/09/2020 11:41
+  	*/
+	
+	@font-face {
+	    font-family: "Flaticon-new";
+	    src: url("./Flaticon-new.eot");
+	    src: url("./Flaticon-new.eot?#iefix") format("embedded-opentype"), url("./Flaticon-new.woff2") format("woff2"), url("./Flaticon-new.woff") format("woff"), url("./Flaticon-new.ttf") format("truetype"), url("./Flaticon-new.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon-new";
+	        src: url("./Flaticon-new.svg#Flaticon") format("svg");
+	    }
+	}
+	
+	[class^="flaticon-new"]:before,
+	[class*=" flaticon-new"]:before,
+	[class^="flaticon-new"]:after,
+	[class*=" flaticon-new"]:after {
+	    font-family: Flaticon-new;
+	    font-style: normal;
+	}
+	
+	.flaticon-new-online-class:before {
+	    content: "\f100";
+	}
+	
+	.flaticon-new-community:before {
+	    content: "\f101";
+	}
+	
+	.flaticon-new-human:before {
+	    content: "\f102";
+	}
+	
+	.flaticon-new-presentation:before {
+	    content: "\f103";
+	}
+	
+	.flaticon-new-raise-hand:before {
+	    content: "\f104";
+	}
+	
+	.flaticon-new-online-learning:before {
+	    content: "\f105";
+	}
+	
+	.flaticon-new-reading:before {
+	    content: "\f106";
+	}
+	
+	.flaticon-new-lecture:before {
+	    content: "\f107";
+	}
+	
+	.flaticon-new-studying:before {
+	    content: "\f108";
+	}
+	
+	.flaticon-new-card:before {
+	    content: "\f109";
+	}

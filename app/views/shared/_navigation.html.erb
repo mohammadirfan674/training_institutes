@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <h2>Training Institues</h2>
+  <ul class="nav nav-bar">
+    <li class="nav-item">
+      <a class="nav-link active" href="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about_us">About us</a>
+    </li>
+    <li class="nav-item">
+
+      <% if current_user %>
+      <a class="nav-link" href="/courses/:course_id%>/fees/new">Fee</a>
+      <% else %>
+      <a class="nav-link" href="/courses">courses</a>
+      <% end %>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="/contacts/new">contact</a>
+    </li>
+    <li>
+      <% if current_user %>
+      <a class="nav-link " href="/profiles/new">profile page</a>
+        <%= link_to "SignOut", destroy_user_session_path,
+                  method: :delete,
+                  class: "nav-link",
+                  data: { confirm: "Are you sure to logout?" } %>
+      <% else %>
+       <a class="nav-link active" href="/users/sign_in">sign in</a>
+       <% end %>
+    </li>
+  </ul>
+</div>

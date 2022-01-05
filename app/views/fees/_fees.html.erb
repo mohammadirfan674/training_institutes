@@ -1,0 +1,30 @@
+<h1> List of fees for Course <%= @course.name%></h1>
+ <% @course.fees.each do |fee| %>
+     <p>
+        <strong>ID</strong>
+        <%= fee.id %>
+      </p>
+      <p>
+        <strong>Name:</strong>
+        <%= fee.name %>
+      </p>
+      <p>
+        <strong>Duration</strong>
+        <%= fee.duration %>
+      </p>
+      <p>
+        <strong>Amount:</strong>
+        <%= fee.amount %>
+      </p>
+      <p>
+        <strong>Certificate</strong>
+        <%= fee.certificate %>
+      </p>
+
+
+
+
+      <li><%= link_to "Destroy Fee", [fee.course, fee],
+                          method:  :delete,
+                          data: { confirm: "Are you sure?" } %><li>
+  <% end %>

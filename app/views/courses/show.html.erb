@@ -1,0 +1,69 @@
+<h1>Show</h1>
+
+  <h2><%= @course.id %></h2>
+  <h2><%= @course.name %></h2>
+  <p><%= @course.body%></p>
+  <p>
+    <strong><%= @course.language %></strong>
+  </p>
+  <p><%= @course.course_include %></p>
+  <p><%= @course.requirement%></p>
+
+  <a href="/courses/<%= @course.id %>/edit">Edit</a>
+  <li><%= link_to "Destroy", course_path(@course),
+                    method:  :delete,
+                    data: { confirm: "Are you sure?" } %><li>
+
+<h1> Fee  Structure</h1>
+    <%= form_with model: [@course, @course.fees.build ] do |form| %>
+      <p>
+        <%= form.label :name %><br>
+        <%= form.text_field :name %>
+      </p>
+      <p>
+        <%= form.label :duration %><br>
+        <%= form.text_field :duration %>
+      </p>
+      <p>
+        <%= form.label :amount %><br>
+        <%= form.text_field :amount %>
+      </p>
+      <p>
+        <%= form.label :certificate %><br>
+        <%= form.text_field :certicicate %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+<% end %>
+
+<h1> List of fees for Course <%= @course.name%></h1>
+ <% @course.fees.each do |fee| %>
+     <p>
+        <strong>ID</strong>
+        <%= fee.id %>
+      </p>
+      <p>
+        <strong>Name:</strong>
+        <%= fee.name %>
+      </p>
+      <p>
+        <strong>Duration</strong>
+        <%= fee.duration %>
+      </p>
+      <p>
+        <strong>Amount:</strong>
+        <%= fee.amount %>
+      </p>
+      <p>
+        <strong>Certificate</strong>
+        <%= fee.certificate %>
+      </p>
+
+
+
+
+      <li><%= link_to "Destroy Fee", [fee.course, fee],
+                          method:  :delete,
+                          data: { confirm: "Are you sure?" } %><li>
+  <% end %>

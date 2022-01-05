@@ -1,0 +1,30 @@
+<%= form_with(model: contact) do |form| %>
+
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
+  </div>
+
+  <div>
+    <%= form.label :course_name %><br>
+    <% ['Modern JavaScript', 'Python and Django', 'ASP.Net MVC',
+    'Learn and Understand NodeJS', 'Bootstrap 4'].each do |ele| %>
+    <%= form.radio_button(:course_name, ele) %><%= form.label ele %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :mobile_no %><br>
+    <%= form.text_field :mobile_no %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
